@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Color Palette Generator</h1>
+    <p class="subtitle">Создавай и сохраняй красивые цвета</p>
+
+    <button class="generate" onclick="generatePalette()">Создать палитру</button>
+
+    <div class="palette" id="palette"></div>
+
+    <h2>Избранные цвета ⭐</h2>
+    <div class="favorites" id="favorites"></div>
+
+    <div class="contrast">
+        <h2>Проверка контрастности</h2>
+
+        <label>Первый цвет:</label>
+        <input type="color" id="color1" value="#000000">
+
+        <label>Второй цвет:</label>
+        <input type="color" id="color2" value="#ffffff">
+
+        <button onclick="checkContrast()">Проверить</button>
+
+        <p id="contrastResult"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

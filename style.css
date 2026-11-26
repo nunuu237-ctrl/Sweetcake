@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f3f6;
+    color: #222;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    background: #333;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.generate {
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.color-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.color-box {
+    height: 150px;
+    cursor: pointer;
+}
+
+.color-code {
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+.favorite {
+    background: #e5a000;
+    padding: 8px 12px;
+}
+
+h2 {
+    margin: 35px 0 15px;
+}
+
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.favorite-item {
+    width: 100px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.favorite-color {
+    height: 70px;
+}
+
+.favorite-item button {
+    margin-top: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.contrast {
+    margin-top: 35px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.contrast input {
+    width: 70px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#contrastResult {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+    }
+
+    .palette {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
